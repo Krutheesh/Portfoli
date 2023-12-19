@@ -1,6 +1,7 @@
 import React from "react";
 import hero from "../assets/images/hero.png";
 import {BsLinkedin, BsGithub} from 'react-icons/bs'
+import { ImWhatsapp } from "react-icons/im";
 const Hero = () => {
  
   return (
@@ -28,7 +29,7 @@ const Hero = () => {
           </div>
           
           <button className="btn-primary mt-8">Contact Me</button>
-          <div className="mt-8 text-3xl flex items-center md:justify-start md:pl-[1.8rem] justify-center gap-5">
+          <div className="mt-8 text-3xl flex items-center md:justify-start md:pl-[0.3rem] justify-center gap-5">
             
               <div
               
@@ -44,6 +45,15 @@ const Hero = () => {
             >
              <a href="https://github.com/Krutheesh">
              <BsGithub/>
+             </a>
+            
+            </div>
+            <div
+              
+              className="text-gray-600 hover:text-green-600 cursor-pointer "
+            >
+             <a href="https://api.whatsapp.com/send?phone=8688191130" target='_blank'>
+             <ImWhatsapp />
              </a>
             
             </div>

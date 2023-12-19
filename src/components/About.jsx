@@ -41,7 +41,7 @@ const About = () => {
       </div>
       <div className="px-[6.5rem] py-[2rem">
       
-              <a href="./src/assets/Krutheesh_Siripuram_8688191130 (1) (3).pdf" download>
+              <a href="https://drive.google.com/file/d/1UCVLl09xevtKIEi_yglxeM5ylF86Hbem/view?usp=sharing" >
                 <button className="btn-primary">Resume</button>
               </a>
       </div>

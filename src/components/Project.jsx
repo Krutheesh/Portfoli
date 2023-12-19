@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import project1 from "../assets/images/project-1.png";
 import project2 from "../assets/images/project-2.png";
 import project3 from "../assets/images/project-3.png";
+import netflix from "../assets/images/netflix.png";
 import project_person from "../assets/images/project_person1.png";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -10,6 +11,14 @@ import { Pagination, Autoplay } from "swiper";
 
 const Project = () => {
   const projects = [
+    {
+      img: netflix,
+      name: "NetflixGpt",
+      github_link: 'https://github.com/Krutheesh/NetflixGpt',
+      live_link: "https://krutheeshnetflixgpt.netlify.app/browse",
+      discription:'Built using React, Redux Toolkit, Tailwind CSS and integrated with Firebase for user authentication.  Implemented a unique Chat GPT search using GPT-3.5 Turbo API for intuitive movie searches. Proficiently utilized TMDB API for comprehensive movie data retrieval, showcasing adeptness in seamless integration within React applications.'
+      
+    },
     {
       img: project1,
       name: "Ecommerce",
