@@ -16,7 +16,7 @@ const Navbar = () => {
     <nav
       className={`fixed w-full left-0 top-0 z-[999] `}
     >
-      <div className="flex items-center justify-between">
+      <div className="flex items-center bg-gray-800 justify-between">
         <div className="mx-7">
           <h4 className="text-4xl uppercase font-bold">
             KRU<span className="text-sky-500">THE</span>ESH
@@ -29,7 +29,7 @@ const Navbar = () => {
         >
           <ul className="flex items-center gap-1 py-2 text-lg">
             {menuLinks?.map((menu, i) => (
-              <li key={i} className="px-6 hover:text-sky-500">
+              <li key={i} className="px-6 hover:text-sky-500 cursor-pointer">
                 <Link to={menu?.link} spy={true} smooth={true} offset={-20} duration={100} >{menu?.name}</Link>
               </li>
             ))}
@@ -55,7 +55,7 @@ const Navbar = () => {
               <li
                 
                 key={i}
-                className="px-6 hover:text-sky-500"
+                className="px-6 hover:text-sky-500 cursor-pointer"
               >
                 <Link to={menu?.link} spy={true} smooth={true} offset={-20} duration={500} onClick={() => setOpen(false)} >{menu?.name}</Link>
               </li>

@@ -8,10 +8,13 @@ import FireBase from '../assets/skills_img/firebase.png';
 import GitHub from '../assets/skills_img/github.png';
 import Tailwind from '../assets/skills_img/tailwind.png';
 import Mongo from '../assets/skills_img/mongo.png';
+import wordpress_img from '../assets/skills_img/wordpress_img.png';
+import Elementor from '../assets/skills_img/Elementor.png';
+
 
 
 const Skills = () => {
-  const skills = [HTML,CSS,JavaScript,ReactImg,Node,FireBase,GitHub,Tailwind,Mongo];
+  const skills = [HTML,CSS,JavaScript,ReactImg,Node,FireBase,GitHub,Tailwind,Mongo,wordpress_img, Elementor];
   return (
     <section id="skills" className="py-10 bg-gray-800 relative">
       <div className="mt-8 text-gray-100 text-center">
