@@ -41,7 +41,7 @@ const About = () => {
       </div>
       <div className="px-[6.5rem] py-[2rem">
       
-              <a href="https://drive.google.com/file/d/1UCVLl09xevtKIEi_yglxeM5ylF86Hbem/view?usp=sharing" >
+              <a href="https://drive.google.com/file/d/1Gi1qOlgxmAbWXooR4ZhrjCYINzS4DwFy/view" >
                 <button className="btn-primary">Resume</button>
               </a>
       </div>
