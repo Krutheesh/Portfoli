@@ -23,13 +23,14 @@ const Hero = () => {
           </h1>
           <div className="w-max py-2">
           <p className="  animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-3  md:text-2xl text-lg md:leading-normal leading-5 mt-4 font-bold text-sky-400">
-          Software Developer
+          MERN Stack Developer
           </p>
+         
          
 
           </div>
           <div className="mt-5 ">
-          <a className="bg-sky-500 px-6 py-2 rounded-md  " href="contact" >Contact Me</a>
+          <span className="bg-sky-500 px-6 py-2 rounded-md  " href="contact" >Contact Me</span>
 
           </div>
           <div className="mt-8 text-3xl flex items-center md:justify-start md:pl-[0.3rem] justify-center gap-5">

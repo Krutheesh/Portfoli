@@ -8,22 +8,31 @@ import project5 from "../assets/images/project5.png";
 import netflix from "../assets/images/netflix.png";
 import Ecommerce from "../assets/images/Ecommerce.png";
 import DevTinder from "../assets/images/DevTinder.png";
-
+import Connectify from "../assets/images/Connectify.png";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper";
 
 const Project = () => {
   const projects = [
-    {
-      img: Ecommerce,
-      name: "YOURKART Ecommerce",
-      github_link: 'https://github.com/Krutheesh/YOURKART_CLIENT',
-      live_link: "https://yourkart-client.vercel.app/",
-      discription:'YOURKART Ecommerce application is a user-friendly platform that allows customers to browse, shop, and manage orders effortlessly. Built with the MERN stack, it features a sleek, responsive design and secure payment processing. Users can create accounts, track their orders, and receive personalized product recommendations, enhancing the shopping experience while ensuring data security.'
+    
+{
+      img: Connectify,
+      name: "Connectify",
+      github_link: 'https://github.com/Krutheesh/Connectify_Frontend',
+      live_link: "https://connectify-frontend-sigma.vercel.app/",
+      discription:'Connectify is a web application that helps users connect with language partners for conversation practice and cultural exchange. Built with the MERN stack (React.js, Redux Toolkit, Node.js, Express.js, and MongoDB) and powered by Streamify for real-time chat and video calling, it enables learners to practice languages through authentic interactions. With features like secure authentication, friend requests, and a responsive UI built using Tailwind CSS, Connectify offers a seamless and engaging platform for language learners.'
       
     },
-    {
+     {
+      img: DevTinder,
+      name: "DevTinder",
+      github_link: 'https://github.com/Krutheesh/DEV_TINDER_FRONTEND.git',
+      live_link: "https://dev-tinder-frontend-chi.vercel.app",
+      discription:'DevTinder is a web application for developers to connect and collaborate within the tech community. Built with the MERN stack, it allows users to create profiles and find like-minded individuals based on shared skills and interests. With a sleek, responsive design and secure user authentication, DevTinder provides a safe and seamless networking experience for developers.'
+      
+    },
+     {
       img: netflix,
       name: "NetflixGpt",
       github_link: 'https://github.com/Krutheesh/NetflixGpt',
@@ -32,13 +41,15 @@ const Project = () => {
       
     },
     {
-      img: DevTinder,
-      name: "DevTinder",
-      github_link: 'https://github.com/Krutheesh/DEV_TINDER_FRONTEND.git',
-      live_link: "https://dev-tinder-frontend-chi.vercel.app",
-      discription:'DevTinder is a web application for developers to connect and collaborate within the tech community. Built with the MERN stack, it allows users to create profiles and find like-minded individuals based on shared skills and interests. With a sleek, responsive design and secure user authentication, DevTinder provides a safe and seamless networking experience for developers.'
+      img: Ecommerce,
+      name: "YOURKART Ecommerce",
+      github_link: 'https://github.com/Krutheesh/YOURKART_CLIENT',
+      live_link: "https://yourkart-client.vercel.app/",
+      discription:'YOURKART Ecommerce application is a user-friendly platform that allows customers to browse, shop, and manage orders effortlessly. Built with the MERN stack, it features a sleek, responsive design and secure payment processing. Users can create accounts, track their orders, and receive personalized product recommendations, enhancing the shopping experience while ensuring data security.'
       
     },
+   
+   
     {
       img: project5,
       name: "Vote Application",
@@ -80,35 +91,35 @@ const Project = () => {
             {projects.map((project_info, i) => (
               
                 <div className="md:flex justify-between items-center h-full w-full p-4 space-y-3 my-[4rem] bg-slate-700 rounded-xl">
-                  <div className="md:w-[55%]" >
+                  <div className="md:w-[50%]" >
                   <img src={project_info.img} alt="" className="w-full rounded-lg" />
                   </div>
                  
-                 <div className="md:w-[40%] text-center">
+                 <div className="md:w-[45%] text-">
                   
-                 <h3 className="text-xl text-center text-sky-500 mb-[1rem]">{project_info.name}</h3>
+                 <h3 className="text-xl font-bold text-sky-500 mb-[1rem]">{project_info.name}</h3>
                  <p>
                   {
                     project_info.discription
                   }
                   </p>
-                  <div className="space-x-3 mt-[1rem]">
+                  {/* <div className="space-x-3 mt-[1rem]">
                     <span className=" bg-gray-800 text-white px-2 py-1">React</span>
                     <span className=" bg-gray-800 text-white px-2 py-1">Tailwind Css</span>
-                  </div>
+                  </div> */}
 
-                  <div className="flex gap-3 justify-around mt-[1rem] ">
+                  <div className="flex gap-3  mt-[1rem] ">
                     <a
                       href={project_info.github_link}
                       target="_blank"
-                      className="text-sky-500 hover:opacity-50 px-2 py-1 inline-block"
+                      className="text-white bg-sky-500  hover:opacity-50  rounded px-2 py-1 inline-block"
                     >
                       Github
                     </a>
                     <a
                       href={project_info.live_link}
                       target="_blank"
-                      className="text-sky-500 hover:opacity-50 px-2 py-1 inline-block"
+                      className="text-white bg-sky-500 rounded hover:opacity-50 px-2 py-1 inline-block"
                     >
                       Live Demo
                     </a>
